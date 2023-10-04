@@ -1,0 +1,16 @@
+program Banco;
+
+uses
+  Forms,
+  uTelaPadrao01 in 'C:\DELPHI-LIB\Grupo Recursos 2010\Formulario\uTelaPadrao01.pas' {FTelaPadrao01},
+  UBanco in 'UBanco.pas' {FBanco};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFTelaPadrao01, FTelaPadrao01);
+  Application.CreateForm(TFBanco, FBanco);
+  Application.Run;
+end.

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/10/03 12:18:48.340.pas,C:\Users\caio\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\caio\Desktop\Banco\UBanco.pas</Transaction>
+    <Transaction>2023/10/03 12:18:48.341.dfm,C:\Users\caio\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\caio\Desktop\Banco\UBanco.dfm</Transaction>
+    <Transaction>2023/10/03 12:18:54.404.dproj,C:\Users\caio\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\caio\Desktop\Banco\Banco.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

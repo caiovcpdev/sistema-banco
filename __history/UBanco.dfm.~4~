@@ -1,0 +1,438 @@
+inherited FBanco: TFBanco
+  Caption = 'FBanco'
+  ExplicitWidth = 765
+  ExplicitHeight = 580
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PageControl1: TPageControl
+    inherited Texto: TTabSheet
+      ExplicitLeft = 4
+      ExplicitTop = 6
+      ExplicitWidth = 751
+      ExplicitHeight = 465
+      inherited ScrollBox1: TScrollBox
+        object Label3: TLabel
+          Left = 56
+          Top = 45
+          Width = 46
+          Height = 13
+          Caption = 'Id Cliente'
+        end
+        object Label4: TLabel
+          Left = 56
+          Top = 89
+          Width = 30
+          Height = 13
+          Caption = 'Nome '
+        end
+        object Label5: TLabel
+          Left = 56
+          Top = 129
+          Width = 78
+          Height = 13
+          Caption = 'Numero Ag'#234'ncia'
+        end
+        object Label6: TLabel
+          Left = 56
+          Top = 169
+          Width = 69
+          Height = 13
+          Caption = 'Numero Banco'
+        end
+        object Label7: TLabel
+          Left = 56
+          Top = 211
+          Width = 29
+          Height = 13
+          Caption = 'Banco'
+        end
+        object Label8: TLabel
+          Left = 56
+          Top = 307
+          Width = 51
+          Height = 13
+          Caption = 'Valor Total'
+        end
+        object Label9: TLabel
+          Left = 56
+          Top = 259
+          Width = 75
+          Height = 13
+          Caption = 'Conta Corrente'
+        end
+        object Label10: TLabel
+          Left = 219
+          Top = 45
+          Width = 36
+          Height = 13
+          Caption = 'Extrato'
+        end
+        object edtID_Cliente: TsEdit_Text
+          Left = 56
+          Top = 64
+          Width = 121
+          Height = 21
+          TabOrder = 0
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'ID_CLIENTE'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Id Cliente'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = False
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object edtNome: TsEdit_Text
+          Left = 56
+          Top = 104
+          Width = 121
+          Height = 21
+          TabOrder = 1
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'NOME'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Nome'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = True
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object sEdit_Text3: TsEdit_Text
+          Left = 56
+          Top = 144
+          Width = 121
+          Height = 21
+          TabOrder = 2
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'NUMERO_AGENCIA'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Numero Agencia'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = False
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object sEdit_Text4: TsEdit_Text
+          Left = 56
+          Top = 184
+          Width = 121
+          Height = 21
+          TabOrder = 3
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'ID_BANCO'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Numero Banco'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = False
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object sEdit_Text5: TsEdit_Text
+          Left = 56
+          Top = 227
+          Width = 121
+          Height = 21
+          TabOrder = 4
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'DESCRICAO'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Banco'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = False
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object sEdit_Text6: TsEdit_Text
+          Left = 56
+          Top = 275
+          Width = 121
+          Height = 21
+          TabOrder = 5
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'CONTA_CORRENTE'
+          ZZ_RequeridoSair = False
+          ZZ_Titulo = 'Conta Corrente'
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = True
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object sEdit_Text7: TsEdit_Text
+          Left = 56
+          Top = 323
+          Width = 121
+          Height = 21
+          TabOrder = 6
+          BoundLabel.Indent = 0
+          BoundLabel.Font.Charset = DEFAULT_CHARSET
+          BoundLabel.Font.Color = clWindowText
+          BoundLabel.Font.Height = -11
+          BoundLabel.Font.Name = 'Tahoma'
+          BoundLabel.Font.Style = []
+          BoundLabel.Layout = sclLeft
+          BoundLabel.MaxWidth = 0
+          BoundLabel.UseSkinColor = True
+          SkinData.SkinSection = 'EDIT'
+          AboutVersaoAutor = #174'2010/v2.0 por J'#250'nior'
+          ZZ_NomeCampo = 'VALOR_TOTAL'
+          ZZ_RequeridoSair = False
+          ZZ_RequeridoGravar = False
+          ZZ_ConsistirData = False
+          ZZ_ConsistirHora = False
+          ZZ_ZeroEsquerda = 0
+          ZZ_OrdemChave = 0
+          ZZ_Indice = False
+          ZZ_DesabilitarSair = False
+          ZZ_AutoIncremente = False
+          ZZ_CampoTabela = True
+          ZZ_LimpaCampo = True
+          ZZ_CampoProtegido = False
+          ZZ_AnulaEventos = False
+          ZZ_OrdemEditarOnExit = 0
+          ZZ_CampoUsuarioSistema = False
+          ZZ_AnulaDBEnter = False
+          ZZ_ParametroRPT = False
+          ZZ_ParametroRPTItem = 0
+          ZZ_ParametroDLLEntrada = False
+          ZZ_ParametroDLLEntradaItem = 0
+          ZZ_ParametroDLLSaida = False
+          ZZ_ParametroDLLSaidaItem = 0
+        end
+        object DBGrid1: TDBGrid
+          Left = 219
+          Top = 64
+          Width = 377
+          Height = 280
+          DataSource = DS_Extrato
+          TabOrder = 7
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+          Columns = <
+            item
+              Expanded = False
+              FieldName = 'NUMERO_AGENCIA'
+              Width = 101
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'NUMERO_CONTA'
+              Width = 99
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'TIPO_MOVIMENTACAO'
+              Width = 123
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'VALOR'
+              Width = 39
+              Visible = True
+            end>
+        end
+        object btnGerar_Extrato: TButton
+          Left = 521
+          Top = 350
+          Width = 75
+          Height = 25
+          Caption = 'Gerar Extrato'
+          TabOrder = 8
+          OnClick = btnGerar_ExtratoClick
+        end
+      end
+    end
+  end
+  inherited Sp_Stored: TADOStoredProc
+    DataSource = DBChamaLocalizar1
+    Left = 688
+    Top = 176
+  end
+  inherited DS_Sp_Stored: TDataSource
+    Left = 688
+    Top = 240
+  end
+  inherited NomeStored1: TsNomeStored
+    NomeStoredLocalizar = 'STB_localizar_caio'
+    NomeProjeto = 'BancoProdev'
+  end
+  inherited sSkinManager1: TsSkinManager
+    IsDefault = False
+  end
+  object DS_Extrato: TDataSource
+    Left = 688
+    Top = 312
+  end
+  object SP_Extrato: TADOStoredProc
+    Parameters = <>
+    Left = 688
+    Top = 384
+  end
+end

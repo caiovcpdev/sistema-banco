@@ -1,0 +1,85 @@
+//Gerar exe
+program Banco;
+
+uses
+  Windows,
+  Messages,
+  SysUtils,
+  Classes,
+  Graphics,
+  Controls,
+  Forms,
+  Dialogs,
+  ExtCtrls,
+  uBanco in 'uBanco.pas' {Banco},
+  uTelaPadrao01 in 'C:\DELPHI-LIB\Grupo Recursos 2010\Formulario\uTelaPadrao01.pas' {FTelaPadrao01};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfBanco, fBanco);
+  fBanco.MyParentApplication := nil;
+  fBanco.MyParentForm        := nil;
+  fBanco.MyParentPanel       := nil;
+  fBanco.VPuNomeUsuario      := 'Reinaldo';
+  fBanco.vPuCSProvedor       := 'Provider=SQLOLEDB.1;Password=rec235net896sim;Persist Security Info=True;User ID=matrix;Initial Catalog=Recursos_Matrix;Data Source=grbd01,1433';
+
+  fBanco.Proc_Conexao;
+
+  Application.Run;
+end.
+
+
+//Gerar dll
+library Banco;
+
+uses
+  Windows,
+  Messages,
+  SysUtils,
+  Classes,
+  Graphics,
+  Controls,
+  Forms,
+  Dialogs,
+  ExtCtrls,
+  uBanco in 'uBanco.pas' {fBanco},
+  uTelaPadrao01 in 'C:\DELPHI-LIB\Grupo Recursos 2010\Formulario\uTelaPadrao01.pas' {FTelaPadrao01};
+
+procedure ProvaChild(ParentApplication: TApplication; ParentForm: TForm; Fundo: TPanel; UsuarioLogado: String; CSProvedor: String); export; stdcall;
+var
+  fBanco: TfBanco;
+  DllProc: Pointer; { Called whenever DLL entry point is called }
+begin
+  Application:=ParentApplication;
+
+  fBanco := TfBanco.Create(ParentForm);
+
+  fBanco.MyParentApplication := ParentApplication;
+  fBanco.MyParentForm        := ParentForm;
+  fBanco.MyParentPanel       := Fundo;
+  fBanco.VPuNomeUsuario      := UsuarioLogado;
+  fBanco.vPuCSProvedor       := CSProvedor;
+
+  windows.SetParent(fBanco.Handle, ParentForm.Handle);
+
+  fBanco.Proc_Conexao;
+
+  fBanco.Show;
+end;
+
+procedure DLLUnloadProc(Reason: Integer); register;
+begin
+  if Reason = DLL_PROCESS_DETACH then
+     Application := DllApplication;
+end;
+
+exports
+  ProvaChild;
+
+begin
+  DllApplication:=Application;
+  DLLProc := @DLLUnloadProc;
+end.
+
